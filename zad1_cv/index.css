@@ -35,8 +35,19 @@ section {
     text-align: center;
 }
 
-p {
-    font-size: 22px;
+#info_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.6;
+    margin: 0 10px;
+}
+
+#cv_photo {
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 25px;
 }
 
 h2 {
@@ -105,7 +116,7 @@ a {
     text-align: center;
 }
 
-#experience h3 {
+#experience h3, p {
     font-size: 22px;
 }
 
@@ -147,16 +158,41 @@ footer {
         border: none;
         width: calc(50% - 50px);
     }
+
+    #info_container {
+        flex-direction: row;
+        width: 700px;
+        margin: 0 auto;
+        gap: 30px;
+    }
+
+    #info_container p {
+        text-align: left;
+        font-size: 26px;
+        width: 50%;
+    }
+
+    #cv_photo {
+        width: 50%;
+    }
 }
 
 @media (min-width: 1024px) {
-    #about p, #projects li, #experience article {
+    #projects li, #experience article {
         width: 70%;
         margin: 15px auto;
     }
 
-    p {
+    #experience h3, p {
         font-size: 26px;
+    }
+
+    #info_container {
+        width: 1000px;
+    }
+
+    #info_container p {
+        font-size: 38px;
     }
 }
 
@@ -165,12 +201,12 @@ footer {
         width: calc(25% - 50px)
     }
 
-    #about p, #projects li, #experience article {
+    #projects li, #experience article {
         width: 50%;
         margin: 15px auto;
     }
 
-    p {
+    #experience h3, p {
         font-size: 30px;
     }
 }
