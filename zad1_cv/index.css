@@ -28,8 +28,11 @@ section {
 }
 
 #about {
-    font-size: 22px;
     text-align: center;
+}
+
+p {
+    font-size: 22px;
 }
 
 h2 {
@@ -38,6 +41,7 @@ h2 {
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+    text-align: center;
 }
 
 #skills {
@@ -46,7 +50,6 @@ h2 {
     align-items: center;
     justify-content: center;
     color: hsla(120, 15%, 92%, 1);
-    border-bottom: none;
 }
 
 #skills ol {
@@ -63,6 +66,15 @@ h2 {
     padding-bottom: 20px;
 }
 
+#skills ol li:last-child {
+    border-bottom: none;
+}
+
 .skill-image {
     width: 400px;
+}
+
+#education {
+    text-align: center;
+    line-height: 1.7;
 }
