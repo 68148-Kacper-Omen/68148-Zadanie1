@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-header {
+header, footer {
     text-align: center;
     padding: 20px 0;
     font-family: 'Montserrat', sans-serif;
@@ -79,8 +79,7 @@ h2 {
     line-height: 1.7;
 }
 
-#projects a {
-    text-decoration: underline;
+a {
     color: hsla(120, 10%, 70%, 1)
 }
 
@@ -121,5 +120,9 @@ h2 {
 }
 
 #contact a {
+    color: hsla(120, 15%, 92%, 1);
+}
+
+footer {
     color: hsla(120, 15%, 92%, 1);
 }
